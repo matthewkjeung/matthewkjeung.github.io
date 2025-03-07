@@ -338,6 +338,8 @@ body {
     width: 100%;
 }
 
+/* ...existing code... */
+
 @media (max-width: 1000px) {
     .section {
         flex-direction: column;
@@ -372,4 +374,55 @@ body {
     .additional-info {
         width: 90%;
     }
+
+    /* Increase font sizes by 5px */
+    .nav-text {
+        font-size: 25px;
+    }
+
+    .banner-title {
+        font-size: 45px;
+    }
+
+    .banner-subtitle {
+        font-size: 30px;
+    }
+
+    .banner-text {
+        font-size: 23px;
+    }
+
+    .banner-link {
+        font-size: 25px;
+    }
+
+    .header-text {
+        font-size: 45px;
+    }
+
+    .portfolio-title {
+        font-size: 35px;
+    }
+
+    .portfolio-subtitle {
+        font-size: 25px;
+    }
+
+    .portfolio-text {
+        font-size: 21px;
+    }
+
+    .portfolio-header {
+        font-size: 25px;
+    }
+
+    .portfolio-paragraph {
+        font-size: 21px;
+    }
+
+    .expand-btn {
+        font-size: 25px;
+    }
 }
+
+/* ...existing code... */
