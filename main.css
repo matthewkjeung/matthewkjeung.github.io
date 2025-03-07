@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url("./fonts/Metropolis-ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Metropolis Bold';
+    src: url("./fonts/metropolis.regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Metropolis Italic';
+    src: url("./fonts/metropolis.thin-italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Metropolis Bold Italic';
+    src: url("./fonts/metropolis.regular-italic.otf") format("opentype");
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #F5F5F5;
+}
+
+#chunk {
+    height: 100px;
+}
+
+#small-chunk {
+    height: 50px;
+}
+
+.navbar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+}
+
+.nav-box {
+    height: 75px;
+    width: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-text {
+    color: black;
+    font-family: 'Metropolis';
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-box:hover {
+    background-color: #FFFEF9;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    width: 80%;
+    height: 120vh;
+}
+
+#intro {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 20vh;
+}
+.banner-title {
+    font-size: 40px;
+    font-family: "Metropolis Bold";
+    color: black;
+    margin-top: 20px;
+}
+
+.banner-subtitle {
+    font-size: 25px;
+    font-family: "Metropolis Italic";
+    color: black;
+    margin-top: 20px;
+}
+
+.banner-text {
+    font-size: 18px;
+    font-family: "Metropolis";
+    color: black;
+    margin-top: 20px;
+}
+
+#links {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.banner-link {
+    font-size: 20px;
+    font-family: "Metropolis";
+    color: black;
+    margin-right: 20px;
+}
+
+.header-text {
+    font-size: 40px;
+    font-family: "Metropolis";
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.scroll-btn {
+    background-color: rgba(224, 206, 141, 0.2);
+    border: none;
+    font-size: 30px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(0,0,0);
+}
+
+.scroll-btn:hover {
+    background-color: rgba(250, 239, 197, 0.3);
+    
+}
+
+@keyframes flash {
+    0%, 100% { background-color: rgba(234, 203, 93, 0); }
+    50% { background-color: rgba(250, 239, 197, 1); }
+}
+
+.scroll-btn.flash {
+    animation: flash 2s infinite;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 80%;
+    gap: 20px;
+}
+
+.portfolio-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius:20px;
+    /* border: #BBBBBB 2px solid; */
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.portfolio-box:hover {
+    background-color: #FFFEF9;
+}
+
+.portfolio-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.portfolio-image {
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom:30px;
+    border-radius: 15px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.portfolio-title {
+    font-size: 30px;
+    font-family: "Metropolis Bold";
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.portfolio-subtitle {
+    font-size: 20px;
+    font-family: "Metropolis Italic";
+    color: rgb(129, 129, 129);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.portfolio-subtitle a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.portfolio-subtitle a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.portfolio-text {
+    font-size: 16px;
+    font-family: "Metropolis Italic";
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-header {
+    font-size: 20px;
+    font-family: "Metropolis Bold";
+    color: black;
+    text-align: left;
+    width: 90%;
+}
+
+.portfolio-paragraph {
+    font-size: 16px;
+    font-family: "Metropolis";
+    color: black;
+    text-align: left;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.video-frame {
+    border-radius: 15px; /* Adjust the value as needed */
+    overflow: hidden; /* Ensure the border radius is applied */
+}
+
+.expand-btn {
+    background: rgba(224, 206, 141, 0.2);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 10px;
+    color: rgb(0,0,0);
+}
+
+.expand-btn:hover {
+    background: rgba(248, 226, 146, 0.3);
+}
+
+.expand-btn.flash {
+    animation: flash 2s infinite;
+}
+
+
+.additional-info {
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cursor-glow {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+    /* background: rgb(236,241,255);
+    background: radial-gradient(circle, rgba(236,241,255,1) 0%, rgba(255,250,220,1) 100%, rgba(207,207,207,1) 100%); */
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgb(255, 233, 32, 0.2), 0 0 20px rgb(255, 233, 32, 0.2), 0 0 30px rgb(255, 233, 32, 0.2);
+    transition: width 0.3s ease, height 0.3s ease; /* Add transitions */
+    z-index: 1000;
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+    z-index: 999;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.website {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
