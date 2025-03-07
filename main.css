@@ -299,8 +299,8 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 10px;
+    height: 10px;
     
     /* background: rgb(236,241,255);
     background: radial-gradient(circle, rgba(236,241,255,1) 0%, rgba(255,250,220,1) 100%, rgba(207,207,207,1) 100%); */
