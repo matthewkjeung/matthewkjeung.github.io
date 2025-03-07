@@ -377,51 +377,51 @@ body {
 
     /* Increase font sizes by 5px */
     .nav-text {
-        font-size: 25px;
-    }
-
-    .banner-title {
-        font-size: 45px;
-    }
-
-    .banner-subtitle {
         font-size: 30px;
     }
 
-    .banner-text {
-        font-size: 23px;
+    .banner-title {
+        font-size: 50px;
     }
 
-    .banner-link {
-        font-size: 25px;
-    }
-
-    .header-text {
-        font-size: 45px;
-    }
-
-    .portfolio-title {
+    .banner-subtitle {
         font-size: 35px;
     }
 
+    .banner-text {
+        font-size: 28px;
+    }
+
+    .banner-link {
+        font-size: 30px;
+    }
+
+    .header-text {
+        font-size: 50px;
+    }
+
+    .portfolio-title {
+        font-size: 40px;
+    }
+
     .portfolio-subtitle {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .portfolio-text {
-        font-size: 21px;
+        font-size: 26px;
     }
 
     .portfolio-header {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .portfolio-paragraph {
-        font-size: 21px;
+        font-size: 26px;
     }
 
     .expand-btn {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
