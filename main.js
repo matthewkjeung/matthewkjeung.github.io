@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
             cursorGlow.style.transform = `translate3d(${e.pageX-150}px, ${e.pageY -150}px, 0)`;
         } else {
             cursorGlow.style.display = 'none';
+            cursorGlow.style.display = 'block';
+            cursorGlow.style.width = `${10}px`;
+            cursorGlow.style.height = `${10}px`;
+            cursorGlow.style.transform = `translate3d(${e.pageX-5}px, ${e.pageY -5}px, 0)`;
         }
     });
 
