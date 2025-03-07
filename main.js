@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             cursorGlow.style.display = 'none';
             cursorGlow.style.display = 'block';
-            cursorGlow.style.width = `${10}px`;
-            cursorGlow.style.height = `${10}px`;
-            cursorGlow.style.transform = `translate3d(${e.pageX-5}px, ${e.pageY -5}px, 0)`;
+            cursorGlow.style.width = `${50}px`;
+            cursorGlow.style.height = `${50}px`;
+            cursorGlow.style.transform = `translate3d(${e.pageX-25}px, ${e.pageY -25}px, 0)`;
         }
     });
 
