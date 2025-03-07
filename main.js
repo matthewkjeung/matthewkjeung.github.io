@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const min = 0;
     document.addEventListener('mousemove', function(e) {
         const isOverBox = e.target.closest('.portfolio-box') !== null || e.target.closest('.nav-box') !== null || e.target.closest('.scroll-btn') !== null;
-        const isOverTitle = e.target.closest('#intro') !== null || e.target.closest('#portfolio') !== null || e.target.closest('#contact') !== null;
+        const isOverTitle = e.target.closest('#intro') !== null || e.target.closest('#portfolio') !== null || e.target.closest('#contact') !== null || e.target.closest('.header-text') !== null;
         offset_x = offset_x + Math.random() * (max - min) + min;
         offset_y = offset_y + Math.random() * (max - min) + min;
         offset_size = offset_size + Math.random() * (max - min) + min;
@@ -62,11 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const scrollButtons = document.querySelectorAll('.scroll-btn');
-    scrollButtons.forEach(scrollBtn => {
-        scrollBtn.classList.add('flash');
+    if (scrollButtons.length > 0) {
+        const firstScrollBtn = scrollButtons[0];
+        firstScrollBtn.classList.add('flash');
 
-        scrollBtn.addEventListener('click', function() {
-            scrollBtn.classList.remove('flash');
+        firstScrollBtn.addEventListener('click', function() {
+            firstScrollBtn.classList.remove('flash');
         });
-    });
+    }
 });
