@@ -152,8 +152,8 @@ body {
 }
 
 @keyframes flash {
-    0%, 100% { background-color: rgba(234, 203, 93, 0); }
-    50% { background-color: rgba(250, 239, 197, 1); }
+    0%, 100% { background-color: rgb(255, 228, 129); }
+    50% { background-color: rgb(255, 255, 255, 0.1); }
 }
 
 .scroll-btn.flash {
