@@ -37,10 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cursorGlow.style.height = `${300}px`;
             cursorGlow.style.transform = `translate3d(${e.pageX-150}px, ${e.pageY -150}px, 0)`;
         } else {
-            cursorGlow.style.display = 'block';
-            cursorGlow.style.width = `${100}px`;
-            cursorGlow.style.height = `${100}px`;
-            cursorGlow.style.transform = `translate3d(${e.pageX-50}px, ${e.pageY -50}px, 0)`;
+            cursorGlow.style.display = 'none';
         }
     });
 
