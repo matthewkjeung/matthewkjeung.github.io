@@ -44,7 +44,7 @@ body {
     height: 100%;
     background-color: gold;
     z-index: 1000;
-    animation: fadeOut 1s ease-in-out forwards; /* Adjust duration as needed */
+    animation: fadeOut 2s ease-in-out forwards; /* Adjust duration as needed */
     pointer-events: none; /* Ensure the overlay doesn't block interactions */
 }
 
