@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Make research images toggle dropdowns
+    const researchImages = document.querySelectorAll('.research-image');
+    researchImages.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            const researchSection = img.closest('.research-section');
+            const researchInfo = researchSection.querySelector('.research-info');
+            const dropdownBtn = researchSection.querySelector('.expand-btn.research-dropdown');
+            if (researchInfo.style.display === 'none' || researchInfo.style.display === '') {
+                researchInfo.style.display = 'flex';
+                if (dropdownBtn) dropdownBtn.textContent = '▲';
+            } else {
+                researchInfo.style.display = 'none';
+                if (dropdownBtn) dropdownBtn.textContent = '▼';
+            }
+            if (dropdownBtn) dropdownBtn.classList.remove('flash');
+        });
+    });
     const expandButtons = document.querySelectorAll('.expand-btn');
 
     expandButtons.forEach(button => {
