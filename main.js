@@ -5,15 +5,30 @@ document.addEventListener('DOMContentLoaded', function() {
         button.classList.add('flash'); // Add flash class to each expand button
 
         button.addEventListener('click', function() {
-            const additionalInfo = this.nextElementSibling;
-            if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
-                additionalInfo.style.display = 'flex';
-                this.textContent = '▲';
+            // For research dropdowns, find the nearest .research-section and toggle its .research-info
+            if (button.classList.contains('research-dropdown')) {
+                const researchSection = button.closest('.research-section');
+                const researchInfo = researchSection.querySelector('.research-info');
+                if (researchInfo.style.display === 'none' || researchInfo.style.display === '') {
+                    researchInfo.style.display = 'flex';
+                    button.textContent = '▲';
+                } else {
+                    researchInfo.style.display = 'none';
+                    button.textContent = '▼';
+                }
+                button.classList.remove('flash');
             } else {
-                additionalInfo.style.display = 'none';
-                this.textContent = '▼';
+                // Legacy dropdown logic for other sections
+                const additionalInfo = button.nextElementSibling;
+                if (additionalInfo && (additionalInfo.style.display === 'none' || additionalInfo.style.display === '')) {
+                    additionalInfo.style.display = 'flex';
+                    button.textContent = '▲';
+                } else if (additionalInfo) {
+                    additionalInfo.style.display = 'none';
+                    button.textContent = '▼';
+                }
+                button.classList.remove('flash');
             }
-            this.classList.remove('flash'); // Remove flash class when clicked
         });
     });
 

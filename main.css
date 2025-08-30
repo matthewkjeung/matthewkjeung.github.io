@@ -1,3 +1,8 @@
+/* ...existing code... */
+
+.banner-text a {
+    font-weight: bold;
+}
 @font-face {
     font-family: 'Metropolis';
     src: url("./fonts/Metropolis-ExtraLight.otf") format("opentype");
@@ -114,7 +119,7 @@ body {
 
 .banner-subtitle {
     font-size: 25px;
-    font-family: "Metropolis Italic";
+    font-family: "Metropolis";
     color: black;
     margin-top: 20px;
 }
@@ -124,6 +129,7 @@ body {
     font-family: "Metropolis";
     color: black;
     margin-top: 20px;
+    line-height: 1.4;
 }
 
 .banner-image {
@@ -283,21 +289,28 @@ body {
     color: black;
     text-align: left;
     width: 90%;
+    margin-top: 20px;
 }
 
 .portfolio-paragraph {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Metropolis";
     color: black;
     text-align: left;
     width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.portfolio-paragraph a{
+    color: black;
 }
 
 .video-frame {
     border-radius: 15px; /* Adjust the value as needed */
     overflow: hidden; /* Ensure the border radius is applied */
+    height: 400px;
 }
 
 .expand-btn {
@@ -374,7 +387,120 @@ body {
 }
 
 
-/* ...existing code... */
+.research-section {
+    width: 100%;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin-bottom: 0;
+}
+
+.research-left {
+    flex: 2;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.research-title {
+    font-size: 30px;
+    font-family: "Metropolis Bold";
+    color: black;
+    margin-bottom: 10px;
+}
+
+.research-link {
+    font-family: "Metropolis Italic";
+    color: black;
+    font-size: 20px;
+}
+
+.research-link a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+.research-blurb {
+    font-size: 20px;
+    font-family: "Metropolis";
+    color: black;
+    margin-bottom: 10px;
+}
+
+.research-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.research-image {
+    border-radius: 15px;
+    object-fit: cover;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.research-dropdown {
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.research-info {
+    display: none;
+    width: 80%;
+    background: #FFFEF9;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .05);
+    padding: 30px 40px;
+    margin-top: 10px;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-info-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+@media (max-width: 1000px) {
+    .research-row, .research-info {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+    .research-right {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .research-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 @media (max-width: 1000px) {
     .section {
@@ -467,4 +593,3 @@ body {
 
 
 
-/* ...existing code... */

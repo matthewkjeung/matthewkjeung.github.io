@@ -13,20 +13,20 @@
             <div class="nav-text">Research</div>
         </a>
         <a href ="#projects" class="nav-box">
-            <div class="nav-text">Projects</div>
+            <div class="nav-text">Side Projects</div>
         </a>
     </div>
     <div id="banner">
         <div id="intro">
             <img class="banner-image" src="images/profile.png" />
             <div class="banner-title">Matthew Jeung</div>
-            <div class="banner-subtitle">Student, HCI Researcher, Software Developer</div>
+            <div class="banner-subtitle">Student, HCI / Robotics Researcher</div>
             <div class="banner-text">
-                I'm a Junior at the University of Chicago studying Computer Science and Public Policy. As a researcher with the 
-                <a href="https://www.axlab.cs.uchicago.edu/" target="_blank" class="text-link">Actuated Experience Lab</a>, I am interested in robotics, the applications of LLMs, and software development.
+                Hi there! I'm a Senior at the University of Chicago studying Computer Science. My research with the
+                <a href="https://www.axlab.cs.uchicago.edu/" target="_blank" class="text-link">Actuated Experience Lab</a> and <a href="https://ttic.edu/ripl/" target="_blank" class="text-link">Robot Intelligence through Perception Lab</a> explores multi-modal interaction and robot learning, with an interest in modular, reconfigurable systems.
             </div>            <div id="links">
                 <a href = "./Matthew_Jeung_Resume.pdf" target="_blank" class="banner-link">Resume</a>
-                <a href="https://github.com/mkjeung" target="_blank" class="banner-link">Github</a>
+                <!-- <a href="https://github.com/mkjeung" target="_blank" class="banner-link">Github</a> -->
                 <a href="https://www.linkedin.com/in/matthew-jeung-b50002240/" target="_blank" class="banner-link">Linkedin</a>
             </div>
         </div>
@@ -37,50 +37,165 @@
     </div>
     <div id="research" class="header-text">Research</div>
     <div id="small-chunk"></div>
-    <div class="section">
-        <div class="column">
-            <div class="portfolio-box">
-                <div class="portfolio-content">
-                    <div class="portfolio-title">Shape n' Swarm</div>
-                    <div class="portfolio-subtitle">
-                        <a href="https://www.axlab.cs.uchicago.edu/" target="_blank">Actuated Experience Lab</a>
-                    </div>
-                    <div class="portfolio-text">Tangibly authoring swarm robots using LLMs.</div>
-                    <img class="portfolio-image" height="350px" src="images/Frame 18.png" />
+    <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">Shape n' Swarm [UIST 2025]</div>
+                <div class="research-blurb">Hands-on, Shape-aware Generative Authoring with Swarm UI and LLMs</div>
+                <div class="research-link"><a href="https://www.axlab.cs.uchicago.edu/projects/shape-n'-swarm" target="_blank">Paper Page</a></div>
+                <button class="expand-btn research-dropdown">▼</button>
+            </div>
+            <div class="research-right">
+                <img class="research-image" src="images/clip.gif" height="200px" />
+            </div>
+        </div>
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-image">
+                    <iframe class="video-frame" width="100%" src="https://www.youtube.com/embed/5u0M9yL7tyY?si=rZi6Phgh8lvgYc84?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen allow="autoplay"></iframe>
                 </div>
-                <button class="expand-btn">▼</button>
-                <div class="additional-info">
-                    <div class="portfolio-header">Video</div>
-                    <div class="portfolio-image">
-                        <iframe class="video-frame" width="100%" height="350px" src="https://www.youtube.com/embed/J6h5lq421EY?si=DewWSa7PITUY7V4J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="research-info-col">
+                <div class="portfolio-header">Relevant Research Domains</div>
+                <div class="portfolio-paragraph">
+                    Swarm User Interfaces, LLMs, Multi-modal Interaction
+                </div>
+                <div class="portfolio-header">Motivation</div>
+                <div class="portfolio-paragraph">
+                    Growing up, I always imagined that my Lego creations would come to life, understanding their shape and behaving accordingly.
+                    This idea grew into 'shape-aware generative authoring,' which explores what happens when hand-shaping and speech are used to author swarm behaviors. 
+                    Inspired by <a href="https://tangible.media.mit.edu/project/radical-atoms/" target="_blank">Radical Atoms</a> and <a href="https://tangible.media.mit.edu/project/perfect-red/" target="_blank">Perfect Red</a>, 
+                    this paper pushes towards visions of fluid, tangible interaction. This is a passion project that I will present at UIST 2025 in Korea!
+                </div>
+        </div>
+    </div>
+    <div id="small-chunk"></div>
+    <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">Project Torque Locomotion</div>
+                <div class="research-blurb">Multi-module, single-actuator locomotion through deep reinforcement learning.</div>
+                <div class="research-link">Research In Progress</div>
+                <button class="expand-btn research-dropdown">▼</button>
+            </div>
+            <div class="research-right">
+                <img class="research-image" src="images/sim.gif" height="200px" />
+            </div>
+        </div>
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-header">Progress Snapshots</div>
+                <div class="portfolio-paragraph">
+                    Thus far, I have created an accurate <a href="https://mujoco.readthedocs.io/en/stable/overview.html" target="_blank">MuJoCo simulation</a> of our lab's flywheel hardware, with a simulated PID motor controller. 
+                    In this simulation, I have a decent <a href="https://medium.com/@danushidk507/ppo-algorithm-3b33195de14a" target="_blank">PPO control policy</a> that enables basic flipping, turning, and translational movement.
+                </div>
+                <div class="portfolio-image">
+                    <img class="research-image" src="images/hardware.gif" height="200px" />
+                    <div class="portfolio-paragraph">
+                        Early hardware testing for translational locomotion.
                     </div>
-                    <div class="portfolio-header">Paper Abstract</div>
-                    <div class="portfolio-paragraph" style="margin-bottom: 30px;">This paper introduces an interactive system for authoring Swarm UIs—interactive clusters of tabletop robots—by allowing users to control the robots through tangible manipulation and voice commands. Inspired by grounded visions in programmable interactive material, we define this approach as ‘Manipulation-Aware Generative Actuation.' The system employs multiple code-generating LLM agents, based on Chat-GPT 4o, which are architected to work together to take user inputs to process into three major generative tasks: 1. thematically interpret the shape created by users, 2. create animations to the manipulated shape, and 3. flexibly build and map I/O within the cluster of robots for creating interaction. With our proof-of-concept prototype that uses toio robots, we ran a user study with 11 participants, and they were able to flexibly and easily create diverse physical actuation and interaction without any coding. To lead this novel research space, we also share limitations, research challenges, and design recommendations.</div>
+                    <img class="research-image" src="images/sim.gif" height="200px" />
+                    <div class="portfolio-paragraph">
+                        Policy learns to flip from horizontally-oriented flywheel to vertically-oriented flywheel (after 140k timesteps)!
+                    </div>
+                </div>
+            </div>
+            <div class="research-info-col">
+                <div class="portfolio-header">Relevant Research Domains</div>
+                <div class="portfolio-paragraph">
+                    Deep Reinforcement Learning, Self-Reconfiguring Hardware, Modular Robotics
+                </div>
+                <div class="portfolio-header">Motivation</div>
+                <div class="portfolio-paragraph">
+                    This project hopes to push forward research on self-reconfiguring, modular robotic systems, 
+                    such as <a href="https://ieeexplore.ieee.org/document/6696971" target="_blank">M-Blocks</a>.
+                    My vision for this project is to allow users to assemble shapes with cube primitives, which
+                    immediately know how to move based on a shape-flexible control policy. This control policy would also allow for
+                    more flexibility in self-assembling robotic systems.
+
+                </div>
+                <div class="portfolio-header">Skills Involved</div>
+                <div class="portfolio-paragraph">
+                    Robotics simulation with MuJoCo, Reinforcement Learning, Hardware Design (PCB design, 3D modelling)
+                </div>
+                <div class="portfolio-header">Next Steps</div>
+                <div class="portfolio-paragraph">
+                    <ul>
+                        <li>Improvements to RL policy.</li>
+                        <li>Transition from MuJoCo simulation to hardware.</li>
+                        <li>Exploration of multi-module locomotion. (Multiple modules attached together!)</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="portfolio-box">
-                <div class="portfolio-content">
-                    <div class="portfolio-title">TorqueCapsules++</div>
-                    <div class="portfolio-subtitle">
-                        <a href="https://www.axlab.cs.uchicago.edu/projects/torquecapsules" target="_blank">Sony Research x Actuated Experience Lab</a>
-                    </div>
-                    <div class="portfolio-text">Enabling directional haptics through flywheel-based devices.</div>
-                    <img class="portfolio-image" height="350px" src="images/torque_cap.png" />
+    </div>
+    <div id="small-chunk"></div>
+    <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">Video Learning Project [Anonymized]</div>
+                <div class="research-blurb">Developing an autoencoder architecture for robot learning purposes.</div>
+                <div class="research-link">Research In Progress</div>
+                <button class="expand-btn research-dropdown">▼</button>
+            </div>
+            <div class="research-right">
+                <img class="research-image" src="images/output.gif" height="200px" />
+            </div>
+        </div>
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-header">Role</div>
+                <div class="portfolio-paragraph">
+                    Working under a PhD student, I have mainly contributed on dataloading pipelines for parallelized training on GPU, deploying RL agents for data collection, and visualizing autoencoder outputs during training.
                 </div>
-                <button class="expand-btn">▼</button>
-                <div class="additional-info">
-                    <div class="portfolio-header">Demo</div>
-                    <div class="portfolio-image">
-                        <iframe class="video-frame" width="100%" height="350px" src="https://www.youtube.com/embed/7RtdAZ6ymPM?si=njQf82H1IWd30SFv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="portfolio-header">Current Work</div>
-                    <div class="portfolio-paragraph" style="margin-bottom: 30px;">I am working on a 3D-visualization and physics modeling tool that allows users to visualize and calculate torque-induced haptics. This includes building an algorithm to automatically suggest flywheel placement, orientation, and spin speed based on the specified haptic feeling. I am also prototyping a new TorqueCapsule form factor with a smaller motor and a more compact design.</div>
+            </div>
+            <div class="research-info-col">
+                <div class="portfolio-header">Relevant Research Domains</div>
+                <div class="portfolio-paragraph">
+                    Deep Learning, Computer Vision, Diffusion, Robotics
                 </div>
+                <div class="portfolio-header">Skills Involved</div>
+                <div class="portfolio-paragraph">
+                    PyTorch, CUDA
+                </div>
+                <div class="portfolio-header">Motivation</div>
+                <div class="portfolio-paragraph">
+                    Hidden for now!
                 </div>
             </div>
         </div>
+    </div>
+    <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">Haptics Project [Anonymized]</div>
+                <div class="research-blurb">Hidden for now!</div>
+                <div class="research-link">Research In Progress</div>
+                <button class="expand-btn research-dropdown">▼</button>
+            </div>
+            <div class="research-right">
+            </div>
+        </div>
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-header">Role</div>
+                <div class="portfolio-paragraph">
+                    Working as a co-lead author on a haptics paper. Very excited about the project, but hidden for now!
+                </div>
+            </div>
+            <div class="research-info-col">
+                <div class="portfolio-header">Relevant Research Domains</div>
+                <div class="portfolio-paragraph">
+                    Haptics 
+                </div>
+                
+                <div class="portfolio-header">Skills Involved</div>
+                <div class="portfolio-paragraph">
+                    3D Modelling, Electronics (PCB design, microcontrollers), Programming, Simulation
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <div id="small-chunk"></div>
     <div class="centered">
@@ -89,70 +204,95 @@
     <div id="chunk"></div>
     <div id="chunk"></div>
     <div id="chunk"></div>
-    <div id="projects" class="header-text">Projects</div> 
+    <div id="projects" class="header-text">Side Projects</div> 
     <div id="small-chunk"></div>
-    <div class="section">
-        <div class="column">
-            <div class="portfolio-box">
-                <div class="portfolio-content">
-                    <div class="portfolio-title">senseMEE</div>
-                    <div class="portfolio-subtitle">
-                        <a href="https://github.com/mkjeung/senseMEE" target="_blank">Github</a>
-                    </div>
-                    <div class="portfolio-text">ML-based Spotify extension to autoqueue songs based on physical activity, environment, and weather.</div>
-                    <img class="portfolio-image" src="images/senseMEE.png" />
-                </div>
-                <button class="expand-btn">▼</button>
-                <div class="additional-info">
-                    <div class="portfolio-header">Demo</div>
-                    <div class="portfolio-image">
-                        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/V1vomFA4o5Q?si=OPrg0yDEmsSjvbmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
+     <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">1lb Combat Bot</div>
+                <div class="research-blurb">Horizontal spinner bot designed completely from scratch. Features weapon belt system and asymmetrical blade.</div>
+                <div class="research-link"><a href="https://uchicagorobotics.webflow.io/" target="_blank">UChicago Robotics</a></div>
+                <button class="expand-btn research-dropdown">▼</button>
             </div>
-            
-            <div id="chunk"></div>
-            <div class="portfolio-box">
-                <div class="portfolio-content">
-                    <div class="portfolio-title">1lb Combat Bot</div>
-                    <div class="portfolio-subtitle">
-                        <a href="https://uchicagorobotics.webflow.io/" target="_blank">UChicago Robotics</a>
-                    </div>
-                    <div class="portfolio-text">Horizontal spinner bot designed completely from scratch. Features weapon belt system and asymmetrical blade.</div>
-                    <img class="portfolio-image" src="images/bot.png" />
-                </div>
+            <div class="research-right">
+                <img class="research-image" src="images/bot.png" height="200px" />
             </div>
-            <div id="chunk"></div>
         </div>
-        <div class="column">
-            <div class="portfolio-box">
-                <div class="portfolio-content">
-                    <div class="portfolio-title">GreenGuide</div>
-                    <div class="portfolio-subtitle" color="black">
-                        <a href="https://makeharvard.io/" target="_blank">MakeHarvard 2025 Most Sustainable Project</a>
-                    </div>
-                    <div class="portfolio-subtitle">
-                        <a href="https://github.com/mkjeung/grocery-guide" target="_blank">Github</a>
-                    </div>
-                    <div class="portfolio-text">Grocery store item sustainability feedback through barcode-scanning glove. Feedback via OpenFoodFacts API Letter Grade, light indicator, LLM agent.</div>
-                    <img class="portfolio-image" src="images/grocery.jpeg" />
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-header">Demo</div>
+                <div class="portfolio-image">
+                    <iframe class="video-frame" width="100%" src="https://www.youtube.com/embed/8m_u7_DyDZY?si=kwV7f9jUKVz_LIux?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen allow="autoplay"></iframe>
                 </div>
             </div>
-            <div id="chunk"></div>
-            <div class="portfolio-box">
-                <div class="portfolio-content">
-                    <div class="portfolio-title">Connies Coffee</div>
-                    <div class="portfolio-subtitle">
-                        <a href="https://www.conniescoffee.com/" target="_blank">Website</a>
-                    </div>
-                    <div class="portfolio-text">Freelance web development for local Chicago coffee business.</div>
-                    <a href="https://www.conniescoffee.com/" target="_blank" class="website">
-                        <img src="images/connies-coffee.png" class="portfolio-image"/>
-                    </a>
-                    
+            <div class="research-info-col">
+                <div class="portfolio-header">Skills Involved</div>
+                <div class="portfolio-paragraph">3D Modelling (Fusion 360), Electronics (Vertiq drone motor, ESCs, drive motors)</div>
+                <div class="portfolio-header">Description</div>
+                <div class="portfolio-paragraph">A competitive robot built for 1lb combat, featuring a custom weapon belt and unique blade design for optimal performance. Made with one partner.</div>
+            </div>
+        </div>
+    </div>
+    <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">senseMEE</div>
+                <div class="research-blurb">ML-based Spotify extension to autoqueue songs based on physical activity, environment, and weather.</div>
+                <div class="research-link"><a href="https://github.com/mkjeung/senseMEE" target="_blank">Github</a></div>
+                <button class="expand-btn research-dropdown">▼</button>
+            </div>
+            <div class="research-right">
+                <img class="research-image" src="images/senseMEE.png" height="200px" />
+            </div>
+        </div>
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-header">Demo</div>
+                <div class="portfolio-image">
+                    <iframe class="video-frame" width="100%" height="200px" src="https://www.youtube.com/embed/V1vomFA4o5Q?si=OPrg0yDEmsSjvbmI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-            
+            <div class="research-info-col">
+                <div class="portfolio-header">Skills Involved</div>
+                <div class="portfolio-paragraph">Mobile App Development (Swift, Spotify API, IMU data filtering), Machine Learning (scikit-learn)</div>
+                <div class="portfolio-header">Description</div>
+                <div class="portfolio-paragraph">senseMEE uses machine learning to analyze physical activity, environment, and weather, autoqueuing songs on Spotify to match your context.</div>
+            </div>
+        </div>
+    </div>
+    <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">GreenGuide</div>
+                <div class="research-blurb">Grocery store item sustainability feedback through barcode-scanning glove.</div>
+                <div class="research-link"><a href="https://makeharvard.io/" target="_blank">Winnner of MakeHarvard 2025 Most Sustainable Project</a> | <a href="https://github.com/mkjeung/grocery-guide" target="_blank">Github</a></div>
+                <button class="expand-btn research-dropdown">▼</button>
+            </div>
+            <div class="research-right">
+                <img class="research-image" src="images/grocery.jpeg" height="200px" />
+            </div>
+        </div>
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-header">Skills Involved</div>
+                <div class="portfolio-paragraph">Electronics (Raspberry Pi, Soldering, etc), 3D Modelling (Fusion 360), Software Development (Python, Flask, APIs)</div>
+            </div>
+            <div class="research-info-col">
+                <div class="portfolio-header">Description</div>
+                <div class="portfolio-paragraph">GreenGuide provides instant sustainability feedback for grocery items using a barcode-scanning glove, OpenFoodFacts API, and LLM agent.</div>
+            </div>
+        </div>
+    </div>
+    <div class="research-section">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">Connies Coffee</div>
+                <div class="research-blurb">Freelance web development for local Chicago coffee business.</div>
+                <div class="research-link"><a href="https://www.conniescoffee.com/" target="_blank">Website</a></div>
+            </div>
+            <div class="research-right">
+                <img class="research-image" src="images/connies-coffee.png" height="200px" />
+            </div>
         </div>
     </div>
     <div class="cursor-glow"></div>
