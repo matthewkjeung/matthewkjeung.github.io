@@ -452,6 +452,16 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+.minecraft-image {
+    border-radius: 15px;
+    object-fit: cover;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    align-self: center;
+}
+
 .research-dropdown {
     align-self: center;
     margin-top: 10px;
