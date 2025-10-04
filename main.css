@@ -427,6 +427,13 @@ body {
     font-size: 20px;
 }
 
+.research-link2 a {
+    font-family: "Metropolis Bold";
+    color: rgb(204, 181, 53);
+    font-size: 20px;
+    text-decoration: none;
+}
+
 .research-link a {
     color: inherit; /* Inherit color from parent */
     text-decoration: none; /* Remove underline */
