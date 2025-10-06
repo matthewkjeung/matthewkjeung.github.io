@@ -419,6 +419,7 @@ body {
     font-family: "Metropolis Bold";
     color: black;
     margin-bottom: 10px;
+    padding-right: 20px;
 }
 
 .research-link {
@@ -429,7 +430,7 @@ body {
 
 .research-link2 a {
     font-family: "Metropolis Bold";
-    color: rgb(204, 181, 53);
+    color: rgb(170, 147, 15);
     font-size: 20px;
     text-decoration: none;
 }
@@ -443,6 +444,14 @@ body {
     font-family: "Metropolis";
     color: black;
     margin-bottom: 10px;
+}
+
+.research-authors {
+    font-size: 20px;
+    font-family: "Metropolis";
+    color: black;
+    margin-bottom: 10px;
+    padding-right: 40px;
 }
 
 .research-right {
