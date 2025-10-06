@@ -503,6 +503,102 @@ body {
     min-width: 0;
 }
 
+/* Gate placeholder card */
+.gate-message {
+  display: block;
+  margin: 24px auto;
+  max-width: 900px;
+  padding: 0 16px;
+}
+.gate-message-card {
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+.gate-message-card h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+.gate-message-card p {
+  margin: 0 0 12px 0;
+  opacity: .9;
+}
+.gate-message-card button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+/* Modal overlay */
+.gate-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  background: rgba(0,0,0,.55);
+  z-index: 1000;
+}
+.gate-card {
+  background: #ffffff;
+  color: #111827;
+  border-radius: 16px;
+  padding: 20px;
+  width: min(520px, 92vw);
+  box-shadow: 0 10px 25px rgba(0,0,0,.35);
+}
+.gate-card h2 { margin-top: 0; }
+#gate-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-top: 6px;
+}
+.gate-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.gate-actions button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.gate-error {
+  color: #b91c1c;
+  margin-top: 8px;
+}
+
+.gate-message {
+  display: block;
+  margin: 24px auto;
+  max-width: 900px;
+  padding: 0 16px;
+}
+.gate-message-card {
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+.gate-message-card h2 { margin: 0 0 8px 0; font-size: 1.2rem; }
+.gate-message-card p { margin: 0 0 12px 0; opacity: .9; }
+.gate-message-card button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+
+
 @media (max-width: 1000px) {
     .research-row, .research-info {
         flex-direction: column;

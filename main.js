@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Hide all gated sections initially
+    document.querySelectorAll('.gated').forEach(section => {
+        section.style.display = 'none';
+    });
+    const gateMessage = document.getElementById('gate-message');
+    if (gateMessage) gateMessage.hidden = false;
+
+    // Show gated sections when gate button is pressed
+    const openGateBtn = document.getElementById('open-gate');
+    if (openGateBtn) {
+        openGateBtn.addEventListener('click', function() {
+            document.querySelectorAll('.gated').forEach(section => {
+                section.style.display = '';
+            });
+            if (gateMessage) {
+                gateMessage.hidden = true;
+                gateMessage.style.display = 'none';
+            }
+        });
+    }
     // Make research images toggle dropdowns
     const researchImages = document.querySelectorAll('.research-image');
     researchImages.forEach(img => {
@@ -105,3 +125,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+(function () {
+  // Hide gated sections initially
+  const gated = Array.from(document.querySelectorAll(".research-section.gated"));
+  gated.forEach(sec => sec.style.display = "none");
+
+  // Show button handler
+  const showBtn = document.getElementById("show-rest");
+  const gateMsg = document.getElementById("gate-message");
+  if (showBtn) {
+    showBtn.addEventListener("click", () => {
+      gated.forEach(sec => sec.style.display = "");
+      if (gateMsg) gateMsg.style.display = "none";
+    });
+  }
+})();
+

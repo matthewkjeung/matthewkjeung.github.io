@@ -22,8 +22,8 @@
             <div class="banner-title">Matthew Jeung</div>
             <div class="banner-subtitle">Student, HCI / Machine Learning Researcher</div>
             <div class="banner-text">
-                Hi there! I'm a Senior at the University of Chicago studying Computer Science. My research with the
-                <a href="https://www.axlab.cs.uchicago.edu/" target="_blank" class="text-link">Actuated Experience Lab</a> and <a href="https://ttic.edu/ripl/" target="_blank" class="text-link">Robot Intelligence through Perception Lab</a> explores multimodal interaction with LLMs and robot learning. My interest lies in multimodal user control over intelligent systems.
+                I'm a Senior at the University of Chicago studying Computer Science. As a researcher with the 
+                <a href="https://www.axlab.cs.uchicago.edu/" target="_blank" class="text-link">Actuated Experience Lab</a> and <a href="https://ttic.edu/ripl/" target="_blank" class="text-link">Robot Intelligence through Perception Lab</a>, my interest lies in multimodal user control over intelligent systems.
             </div>            <div id="links">
                 <a href = "./Matthew_Jeung_Resume.pdf" target="_blank" class="banner-link">Resume</a>
                 <!-- <a href="https://github.com/mkjeung" target="_blank" class="banner-link">Github</a> -->
@@ -42,7 +42,7 @@
             <div class="research-left">
                 <div class="research-title">Shape n' Swarm [UIST 2025]</div>
                 <div class="research-blurb">Hands-on, Shape-aware Generative Authoring with Swarm UI and LLMs</div>
-                <div class="research-link2"><a href="https://www.axlab.cs.uchicago.edu/projects/shape-n'-swarm" target="_blank">UIST 2025 Best Demo Award</a></div>
+                <div class="research-link2"><a href="https://dl.acm.org/doi/10.1145/3746059.3747781" target="_blank">UIST 2025 Best Demo Award</a></div>
 
                 <button class="expand-btn research-dropdown">▼</button>
             </div>
@@ -57,26 +57,65 @@
                 </div>
             </div>
             <div class="research-info-col">
-                <div class="research-link"><a href="https://www.axlab.cs.uchicago.edu/projects/shape-n'-swarm" target="_blank">Paper Page</a></div>
                 <div class="portfolio-header">Relevant Research Domains</div>
                 <div class="portfolio-paragraph">
                     Swarm User Interfaces, LLMs, Multi-modal Interaction
                 </div>
                 <div class="portfolio-header">Motivation</div>
                 <div class="portfolio-paragraph">
-                    Growing up, I always imagined that my Lego creations would come to life, understanding their shape and behaving accordingly.
-                    This idea grew into 'shape-aware generative authoring,' which explores what happens when hand-shaping and speech are used to author swarm behaviors. 
+                    This project explores what happens when hand-shaping and speech are combined for a tangible authoring method.
                     Inspired by <a href="https://tangible.media.mit.edu/project/radical-atoms/" target="_blank">Radical Atoms</a> and <a href="https://tangible.media.mit.edu/project/perfect-red/" target="_blank">Perfect Red</a>, 
-                    this paper pushes towards visions of fluid, tangible interaction. This is a passion project that I will present at ACM UIST 2025 in Korea!
+                    this paper pushes towards visions of fluid, tangible interaction. This is a passion project that I presented at ACM UIST 2025 in Korea!
                 </div>
+                <div class="research-link"><a href="https://dl.acm.org/doi/10.1145/3746059.3747781" target="_blank">Paper Page</a></div>
+
         </div>
     </div>
     <div id="small-chunk"></div>
-    <div class="research-section">
+    <div id="gate-message" class="gate-message" hidden>
+    <div class="gate-message-card">
+        <h2>Are you a CHI or IROS reviewer?</h2>
+        <p>My other works are currently under review or in progress, please only continue if you are not a reviewer.</p>
+        <button id="open-gate">I'm not a reviewer.</button>
+    </div>
+    </div>
+    <div id="small-chunk"></div>
+    <div class="research-section gated">
         <div class="research-row">
             <div class="research-left">
-                <div class="research-title">Project Torque Locomotion</div>
-                <div class="research-blurb">Multi-module, single-actuator locomotion through deep reinforcement learning.</div>
+                <div class="research-title">Haptics Project [Under Review CHI 2025]</div>
+                <div class="research-blurb">Hidden for now!</div>
+                <div class="research-link">Research In Progress</div>
+                <button class="expand-btn research-dropdown">▼</button>
+            </div>
+            <div class="research-right">
+            </div>
+        </div>
+        <div class="research-info">
+            <div class="research-info-col">
+                <div class="portfolio-header">Role</div>
+                <div class="portfolio-paragraph">
+                    Working as a co-lead author on a haptics paper. Very excited about the project, but hidden for now!
+                </div>
+            </div>
+            <div class="research-info-col">
+                <div class="portfolio-header">Relevant Research Domains</div>
+                <div class="portfolio-paragraph">
+                    Haptics 
+                </div>
+                
+                <div class="portfolio-header">Skills Involved</div>
+                <div class="portfolio-paragraph">
+                    3D Modelling, Electronics (PCB design, microcontrollers), Programming, Simulation
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="research-section gated">
+        <div class="research-row">
+            <div class="research-left">
+                <div class="research-title">TorqueLocomotion</div>
+                <div class="research-blurb">User manipulation-flexible locomotion using deep reinforcement learning.</div>
                 <div class="research-link">Research In Progress</div>
                 <button class="expand-btn research-dropdown">▼</button>
             </div>
@@ -131,74 +170,49 @@
             </div>
         </div>
     </div>
+    
+
     <div id="small-chunk"></div>
-    <div class="research-section">
-        <div class="research-row">
-            <div class="research-left">
-                <div class="research-title">Video Learning Project [Anonymized]</div>
-                <div class="research-blurb">Developing an autoencoder architecture for robot learning purposes.</div>
-                <div class="research-link">Research In Progress</div>
-                <button class="expand-btn research-dropdown">▼</button>
+    <div class="research-section gated">
+        <div class="research-section">
+            <div class="research-row">
+                <div class="research-left">
+                    <div class="research-title">Video Learning Project [Anonymized]</div>
+                    <div class="research-blurb">Developing an autoencoder architecture for robot learning purposes.</div>
+                    <div class="research-link">Research In Progress</div>
+                    <button class="expand-btn research-dropdown">▼</button>
+                </div>
+                <div class="research-right">
+                    <img class="research-image" src="images/crafter.gif" height="200px" />
+                </div>
             </div>
-            <div class="research-right">
-                <img class="research-image" src="images/crafter.gif" height="200px" />
+            <div class="research-info">
+                <div class="research-info-col">
+                    <div class="portfolio-header">Role</div>
+                    <div class="portfolio-paragraph">
+                        Working under a PhD student, I have mainly contributed on dataloading pipelines for parallelized training on GPU, deploying RL agents for data collection, and visualizing autoencoder outputs during training.
+                    </div>
+                </div>
+                <div class="research-info-col">
+                    <div class="portfolio-header">Relevant Research Domains</div>
+                    <div class="portfolio-paragraph">
+                        Deep Learning, Computer Vision, Diffusion, Robotics
+                    </div>
+                    <div class="portfolio-header">Skills Involved</div>
+                    <div class="portfolio-paragraph">
+                        PyTorch, CUDA
+                    </div>
+                    <div class="portfolio-header">Motivation</div>
+                    <div class="portfolio-paragraph">
+                        Hidden for now!
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="research-info">
-            <div class="research-info-col">
-                <div class="portfolio-header">Role</div>
-                <div class="portfolio-paragraph">
-                    Working under a PhD student, I have mainly contributed on dataloading pipelines for parallelized training on GPU, deploying RL agents for data collection, and visualizing autoencoder outputs during training.
-                </div>
-            </div>
-            <div class="research-info-col">
-                <div class="portfolio-header">Relevant Research Domains</div>
-                <div class="portfolio-paragraph">
-                    Deep Learning, Computer Vision, Diffusion, Robotics
-                </div>
-                <div class="portfolio-header">Skills Involved</div>
-                <div class="portfolio-paragraph">
-                    PyTorch, CUDA
-                </div>
-                <div class="portfolio-header">Motivation</div>
-                <div class="portfolio-paragraph">
-                    Hidden for now!
-                </div>
-            </div>
-        </div>
+
     </div>
-    <div id="small-chunk"></div>
-    <div class="research-section">
-        <div class="research-row">
-            <div class="research-left">
-                <div class="research-title">Haptics Project [Anonymized]</div>
-                <div class="research-blurb">Hidden for now!</div>
-                <div class="research-link">Research In Progress</div>
-                <button class="expand-btn research-dropdown">▼</button>
-            </div>
-            <div class="research-right">
-            </div>
-        </div>
-        <div class="research-info">
-            <div class="research-info-col">
-                <div class="portfolio-header">Role</div>
-                <div class="portfolio-paragraph">
-                    Working as a co-lead author on a haptics paper. Very excited about the project, but hidden for now!
-                </div>
-            </div>
-            <div class="research-info-col">
-                <div class="portfolio-header">Relevant Research Domains</div>
-                <div class="portfolio-paragraph">
-                    Haptics 
-                </div>
-                
-                <div class="portfolio-header">Skills Involved</div>
-                <div class="portfolio-paragraph">
-                    3D Modelling, Electronics (PCB design, microcontrollers), Programming, Simulation
-                </div>
-            </div>
-        </div>
-    </div>
+    
+
     </div>
     <div id="small-chunk"></div>
     <div class="centered">
@@ -300,7 +314,7 @@
             </div>
         </div>
     </div>
-    <div class="research-section">
+    <div class="research-section gated">
         <div class="research-row">
             <div class="research-left">
                 <div class="research-title">Minecraft Gallery</div>
