@@ -597,7 +597,7 @@ img.animated-gif{
 
 
 /* ---------- Tablet & down (layout only, no font jumps) ---------- */
-@media (max-width: 1000px) {
+@media (min-width: 640px) and (max-width: 999.98px) {
     .research-row,
     .research-info {
         flex-direction: column;
@@ -627,7 +627,7 @@ img.animated-gif{
 
 
 /* ---------- Phones (single column + centered, safe typography) ---------- */
-@media (max-width: 640px) {
+@media (max-width: 639.98px) {
   /* Compact, consistent text scale for small screens */
   :root {
     --t-sm: clamp(13px, 3.6vw, 16px);
