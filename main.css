@@ -412,7 +412,7 @@ body {
 
 .research-link2 a {
     font-family: "Metropolis Bold";
-    color: rgb(170, 147, 15);
+    color: rgb(180, 155, 13);
     font-size: 20px;
     text-decoration: none;
 }
@@ -597,7 +597,9 @@ img.animated-gif{
 
 @media (max-width: 999.98px) {
   /* Compact, consistent text scale for small screens */
+
   :root {
+    font-size: calc(1rem + 5px);
     --t-sm: clamp(13px, 3.6vw, 16px);
     --t-md: clamp(15px, 4.2vw, 18px);
     --t-lg: clamp(18px, 5vw, 22px);
@@ -643,7 +645,12 @@ img.animated-gif{
   .portfolio-header,
   .portfolio-paragraph { width: 92%; }
 
-  .expand-btn, .scroll-btn { width: 92%; font-size: var(--t-md); }
+  .scroll-btn {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+  }
+  /* .expand-btn, .scroll-btn { width: 92%; font-size: var(--t-md); } */
 
   /* Research stacks */
   .research-section { flex-direction: column; align-items: center; justify-content: center; width: 100%}
@@ -663,7 +670,7 @@ img.animated-gif{
     padding-right: 0;
     width: 80%;
   }
-  .research-right { justify-content: center; width: 70%}
+  .research-right { justify-content: center; width: 100%}
   .research-info {
     width: 70%;
     flex-direction: column;
@@ -685,7 +692,7 @@ img.animated-gif{
   }
 
   .research-image {
-    max-width: 70%;
+    max-width: 100%;
   }
 
   /* Motion-safe */
