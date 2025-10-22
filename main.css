@@ -595,38 +595,6 @@ img.animated-gif{
   cursor: pointer;
 }
 
-
-/* ---------- Tablet & down (layout only, no font jumps) ---------- */
-@media (min-width: 640px) and (max-width: 999.98px) {
-    .research-row,
-    .research-info {
-        flex-direction: column;
-        padding: 20px 10px;
-        gap: 20px;
-    }
-    .research-right {
-        justify-content: center;
-        margin-top: 20px;
-    }
-    .research-image { max-width: 100%; height: auto; }
-
-    .section {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .column,
-    .portfolio-box,
-    .portfolio-content,
-    .portfolio-image,
-    .portfolio-header,
-    .portfolio-paragraph,
-    .additional-info,
-    .expand-btn { width: 90%; }
-}
-
-
-/* ---------- Phones (single column + centered, safe typography) ---------- */
 @media (max-width: 639.98px) {
   /* Compact, consistent text scale for small screens */
   :root {
@@ -724,6 +692,39 @@ img.animated-gif{
     .scroll-btn.flash, .expand-btn.flash { animation: none; }
   }
 }
+
+/* ---------- Tablet & down (layout only, no font jumps) ---------- */
+@media (min-width: 640px) and (max-width: 999.98px) {
+    .research-row,
+    .research-info {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+    .research-right {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .research-image { max-width: 100%; height: auto; }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .column,
+    .portfolio-box,
+    .portfolio-content,
+    .portfolio-image,
+    .portfolio-header,
+    .portfolio-paragraph,
+    .additional-info,
+    .expand-btn { width: 90%; }
+}
+
+
+/* ---------- Phones (single column + centered, safe typography) ---------- */
+
 
 
 /* ---------- Desktop restore (≥1000px) ---------- */
