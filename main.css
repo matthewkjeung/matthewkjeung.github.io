@@ -630,7 +630,7 @@ img.animated-gif{
     align-items: center;
     text-align: center;
   }
-  .banner-image { width: 100px; height: 100px; }
+  .banner-image { width: 30%; height: 30%; }
   #links { justify-content: center; flex-wrap: wrap; gap: 8px; }
   .banner-text {
     width: 70%;
@@ -723,7 +723,7 @@ img.animated-gif{
     justify-content: flex-start;
   }
   #intro {
-    width: 50%;
+    width: 80%;
     align-items: flex-start;
     text-align: left;
     margin-top: 10vh;
