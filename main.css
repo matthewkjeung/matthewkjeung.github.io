@@ -624,7 +624,7 @@ img.animated-gif{
     align-items: center;
   }
   #intro {
-    width: 92%;
+    width: 100%;
     margin-top: 6vh;
     margin-bottom: 6vh;
     align-items: center;
@@ -643,12 +643,10 @@ img.animated-gif{
   .portfolio-image,
   .additional-info,
   .portfolio-header,
-  .portfolio-paragraph { width: 92%; }
+  .portfolio-paragraph { width: 100%; }
 
-  .scroll-btn {
-    width: 150px;
-    height: 30px;
-    font-size: 20px;
+  .scroll-btn { 
+    display: none !important;
   }
   /* .expand-btn, .scroll-btn { width: 92%; font-size: var(--t-md); } */
 
@@ -668,7 +666,7 @@ img.animated-gif{
     align-items: center;
     text-align: center;
     padding-right: 0;
-    width: 80%;
+    width: 100%;
   }
   .research-right { justify-content: center; width: 100%}
   .research-info {
@@ -760,6 +758,6 @@ img.animated-gif{
     padding: 30px 40px;
   }
 
-  .research-image { max-width: 400px; }
+  .research-image { max-width: 80%; }
   .minecraft-image { max-width: 600px; }
 }
