@@ -234,7 +234,7 @@ body {
     width: 90%;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -242,6 +242,15 @@ body {
     border-radius: 15px;
     overflow: hidden;
     object-fit: cover;
+}
+
+/* Make images inside the portfolio-image block half the width of their column
+   and center them. This overrides the global .research-image rule which sets
+   images to 100% width in other contexts. */
+.portfolio-image .research-image {
+  width:70%;
+  min-width: 70%;
+  align-self: center;
 }
 
 .portfolio-title {
@@ -402,8 +411,9 @@ body {
     font-size: 30px;
     font-family: "Metropolis Bold";
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-right: 20px;
+    /* margin-top: 5%; */
 }
 
 .research-link {
@@ -668,6 +678,7 @@ img.animated-gif{
   .research-left {
     margin-left: 0;
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
     padding-right: 0;
     width: 90%;
@@ -695,6 +706,14 @@ img.animated-gif{
   @media (prefers-reduced-motion: reduce) {
     .overlay { animation-duration: 0.01ms; animation-iteration-count: 1; }
     .scroll-btn.flash, .expand-btn.flash { animation: none; }
+  }
+}
+
+/* Ensure portfolio images go full-width on small screens for readability */
+@media (max-width: 999.98px) {
+  .portfolio-image .research-image {
+    width: 100%;
+    min-width: 100%;
   }
 }
 
