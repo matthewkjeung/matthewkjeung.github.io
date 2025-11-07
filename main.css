@@ -380,9 +380,9 @@ body {
 
 .research-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     width: 80%;
     border-radius: 20px;
     padding: 30px 40px;
@@ -394,7 +394,7 @@ body {
     margin-left: 15%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
@@ -662,6 +662,7 @@ img.animated-gif{
     gap: 16px;
     justify-content: center;
     align-items: center;
+    
   }
 
   .research-left {
@@ -732,21 +733,34 @@ img.animated-gif{
   .column { width: 50%; }
 
   .research-row {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 80%;
-    padding: 30px 40px;
-    gap: 0;
+    margin: 0 auto;              /* center the whole row */
+    justify-content: space-between;
   }
+
+
   .research-left {
-    flex: 2;
-    margin-left: 15%;
-    align-items: flex-start;
-    text-align: left;
-    padding-right: 20px;
+  margin-left: 10%;               /* remove the 10–15% offset */
+  align-items: flex-start;      /* stop centering children */
+  text-align: left;             /* left-align all text inside */
+}
+  .research-title,
+  .research-blurb,
+  .research-authors,
+  .research-link,
+  .research-link2 { text-align: left; align-self: stretch; }
+
+
+  /* Fix image column width so it doesn't sprawl */
+  .research-right {
+    /* flex: 0 0 34%;                 ~1/3 for image */
+    justify-content: center;
   }
-  .research-right { flex: 1; }
+
+  /* Let the image fill its column cleanly */
+  /* .research-image {
+    max-width: 100%;
+  } */
 
   .research-info {
     width: 80%;
@@ -755,5 +769,5 @@ img.animated-gif{
     padding: 30px 40px;
   }
 
-  .research-image { max-width: 80%; }
+  .research-image { max-width: 40%; }
 }
