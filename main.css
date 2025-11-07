@@ -133,8 +133,8 @@ body {
 }
 
 .banner-image {
-    width: 18vh;
-    height: 18vh;
+    width: 22vh;
+    height: 22vh;
     overflow: hidden;
     object-fit: cover;
     border-radius: 50%;
