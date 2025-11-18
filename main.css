@@ -152,6 +152,8 @@ body {
     font-family: "Metropolis";
     color: black;
     margin-right: 20px;
+    font-weight: bold;   /* correct way to make text bold */
+    text-decoration: none;  /* remove underline */
 
 }
 
@@ -740,7 +742,7 @@ img.animated-gif{
     justify-content: flex-start;
   }
   #intro {
-    width: 80%;
+    width: 65%;
     align-items: flex-start;
     text-align: left;
     margin-top: 10vh;
