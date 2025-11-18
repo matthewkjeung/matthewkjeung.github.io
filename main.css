@@ -250,7 +250,6 @@ body {
    and center them. This overrides the global .research-image rule which sets
    images to 100% width in other contexts. */
 .portfolio-image .research-image {
-  width:70%;
   min-width: 70%;
   align-self: center;
 }
@@ -461,8 +460,8 @@ body {
 .research-image {
     border-radius: 15px;
     object-fit: cover;
-    width: 100%;
-    min-width: 100%;
+    width: 85%;
+    min-width: 85%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
@@ -790,5 +789,5 @@ img.animated-gif{
     padding: 30px 40px;
   }
 
-  .research-image { max-width: 40%; }
+  .research-image { max-width: 30%; }
 }
