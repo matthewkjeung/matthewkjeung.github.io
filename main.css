@@ -382,7 +382,7 @@ body {
 }
 
 .research-section {
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
     align-items: center;
     justify-content: center;
@@ -665,7 +665,7 @@ img.animated-gif{
   /* .expand-btn, .scroll-btn { width: 92%; font-size: var(--t-md); } */
 
   /* Research stacks */
-  .research-section { flex-direction: column; align-items: center; justify-content: center; width: 90%}
+  .research-section { flex-direction: column; align-items: center; justify-content: center; width: 100%}
   .research-row {
     width: 100%;
     flex-direction: column;
