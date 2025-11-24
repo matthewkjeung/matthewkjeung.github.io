@@ -132,6 +132,15 @@ body {
     max-width: 75%;
 }
 
+/* Make the single-word emphasis in the banner italic using the italic font face. */
+.banner-text em {
+  font-family: "Metropolis Italic", "Metropolis", serif;
+  font-style: italic;
+  color: #000;      /* ensure emphasis is solid black */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 .banner-image {
     width: 20vh;
     height: 20vh;
