@@ -132,15 +132,6 @@ body {
     max-width: 75%;
 }
 
-/* Make the single-word emphasis in the banner italic using the italic font face. */
-.banner-text em {
-  font-family: "Metropolis Italic", "Metropolis", serif;
-  font-style: italic;
-  color: #000;      /* ensure emphasis is solid black */
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
 .banner-image {
     width: 20vh;
     height: 20vh;
@@ -421,13 +412,13 @@ body {
     font-size: 30px;
     font-family: "Metropolis Bold";
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-right: 20px;
     /* margin-top: 5%; */
 }
 
 .research-link {
-    font-family: "Metropolis Italic";
+    font-family: "Metropolis";
     color: black;
     font-size: 20px;
 }
@@ -439,9 +430,30 @@ body {
     text-decoration: none;
 }
 
+/* Inline award row: venue (normal) + award (bold) with same accent color */
+.research-award {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: inherit; /* keep venue in the page's default color */
+  margin-bottom: 10px;
+}
+.research-award .award-venue {
+  font-family: "Metropolis"; /* normal Metropolis */
+  font-weight: 400;
+  color: inherit; /* ensure it's not gold */
+}
+.research-award .award-title {
+  font-family: "Metropolis Bold"; /* bold Metropolis */
+  font-weight: 700;
+  color: rgb(180, 155, 13); /* gold accent only for award title */
+}
+.research-award .award-sep { color: rgba(0,0,0,0.35); opacity: 0.95; }
+
 .research-link a {
     color: inherit; /* Inherit color from parent */
-    text-decoration: none; /* Remove underline */
+    text-decoration: bold; /* Remove underline */
 }
 
 .research-blurb {
@@ -775,9 +787,9 @@ img.animated-gif{
 }
   .research-title,
   .research-blurb,
-  .research-authors,
-  .research-link,
-  .research-link2 { text-align: left; align-self: stretch; }
+  .research-authors {text-align: left; align-self: stretch;}
+  .research-link {text-align: left; align-self: stretch;}
+  .research-link2 { text-align: left; align-self: stretch; margin-bottom: 5px;}
 
 
   /* Fix image column width so it doesn't sprawl */
