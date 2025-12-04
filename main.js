@@ -70,6 +70,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Add handlers for new inline "View details" links (class .details-toggle)
+    const detailToggles = document.querySelectorAll('.details-toggle');
+    detailToggles.forEach(link => {
+        // set initial arrow state based on whether details are visible
+        const researchSection = link.closest('.research-section');
+        const researchInfo = researchSection ? researchSection.querySelector('.research-info') : null;
+        if (researchInfo) {
+            const shown = !(researchInfo.style.display === 'none' || researchInfo.style.display === '');
+            if (shown) {
+                link.textContent = 'View details ▲';
+            } else {
+                link.textContent = 'View details ▼';
+            }
+            link.setAttribute('aria-expanded', shown ? 'true' : 'false');
+        }
+
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const researchSection = link.closest('.research-section');
+            if (!researchSection) return;
+            const researchInfo = researchSection.querySelector('.research-info');
+            if (!researchInfo) return;
+            const isHidden = (researchInfo.style.display === 'none' || researchInfo.style.display === '');
+            if (isHidden) {
+                researchInfo.style.display = 'flex';
+                link.textContent = 'View details ▲';
+                link.setAttribute('aria-expanded', 'true');
+            } else {
+                researchInfo.style.display = 'none';
+                link.textContent = 'View details ▼';
+                link.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
     const cursorGlow = document.querySelector('.cursor-glow');
     let offset_x = 0;
     let offset_y = 0;

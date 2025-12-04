@@ -421,6 +421,7 @@ body {
     font-family: "Metropolis";
     color: black;
     font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .research-link2 a {
@@ -437,7 +438,6 @@ body {
   gap: 10px;
   font-size: 20px;
   color: inherit; /* keep venue in the page's default color */
-  margin-bottom: 10px;
 }
 .research-award .award-venue {
   font-family: "Metropolis"; /* normal Metropolis */
@@ -453,7 +453,8 @@ body {
 
 .research-link a {
     color: inherit; /* Inherit color from parent */
-    text-decoration: bold; /* Remove underline */
+    text-decoration: underline; /* restore underline for inline meta links */
+    text-underline-offset: 2px;
 }
 
 .research-blurb {
@@ -467,7 +468,7 @@ body {
     font-size: 20px;
     font-family: "Metropolis";
     color: black;
-    margin-bottom: 10px;
+  margin-bottom: 12px;
     padding-right: 40px;
 }
 
@@ -517,13 +518,18 @@ img.animated-gif{
     background: #FFFEF9;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .05);
-    padding: 30px 40px;
-    margin-top: 10px;
+  padding: 30px 40px;
+  margin-top: 12px;
     gap: 40px;
     flex-direction: row;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Ensure consistent vertical rhythm inside the left column */
+.research-left > * {
+  margin: 0 0 12px 0;
 }
 
 .research-info-col {
